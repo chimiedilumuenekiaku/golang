@@ -19,7 +19,7 @@ func main() {
 
 	fmt.Printf("Valeur de l'adresse mémoire %v est %d. \n", myPointer, *myPointer)
 
-	update(myPointer, 20)
-	fmt.Println("Valeur de l'adresse mémoire %v a changé-> %d. \n", myPointer, number)
+	update(myPointer, 100)
+	fmt.Printf("Valeur de l'adresse mémoire %v a changé-> %d.\n", myPointer, number)
 
 }
