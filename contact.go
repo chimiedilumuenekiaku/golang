@@ -19,7 +19,7 @@ func newContact(name string, age int, numbers map[string]string) contact {
 }
 
 func (c contact) displayContact() string {
-	display := fmt.Sprintf("Contact: %v (%v ans)", c.name, c.age)
+	display := fmt.Sprintf("Contact: %v (%v ans)\n", c.name, c.age)
 	display += "-------------------\n"
 
 	for key, value := range c.numbers {
