@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func update(pointeurOfNumber *int) {
-	*pointeurOfNumber = 5
+func update(pointeurOfNumber *int, value int) {
+	*pointeurOfNumber = value
 }
 
 func main() {
@@ -19,7 +19,7 @@ func main() {
 
 	fmt.Printf("Valeur de l'adresse mémoire %v est %d. \n", myPointer, *myPointer)
 
-	update(myPointer)
-	fmt.Println("Valeur de number apres update:", number)
+	update(myPointer, 20)
+	fmt.Println("Valeur de l'adresse mémoire %v a changé-> %d. \n", myPointer, number)
 
 }
